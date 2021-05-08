@@ -1,3 +1,6 @@
+# Assets
+Copy the assets folder from windows
+
 # go-rest
 RikData REST Builder is a Golang based application that uses dynamic entity definitions to map existing tables to map objects. As entities are created dynamically, you can configure all the objects as per your business requirement.
 
