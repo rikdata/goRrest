@@ -1,0 +1,61 @@
+{
+    "application": {
+        "protocol": "http://",
+        "hostName": "localhost",
+        "portNumber": 8085       
+    },
+    "database": {
+        "Oracle" : {
+            "host": "localhost",
+            "portNumber": 34000,
+            "dbName": "ebs",
+            "userName": "apps",
+            "password": "password",
+            "connPoll": 5,
+            "maxConnPoll": 1000,
+            "defaultRowLimit" : 5
+        },  
+        "MySQL" : {
+            "host": "localhost",
+            "portNumber": 3306,
+            "dbName": "xmes",
+            "userName": "root",
+            "password": "password",
+            "connPoll": 5,
+            "maxConnPoll": 10,
+            "defaultRowLimit" : 5
+        },
+        "Sqlite" : {
+            "host": "localhost",
+            "portNumber": 3060,
+            "dbName": "mysql",
+            "userName": "apps",
+            "password": "password",
+            "connPoll": 5,
+            "maxConnPoll": 10,
+            "defaultRowLimit" : 5
+        },
+        "MsSql" : {
+            "host": "localhost",
+            "portNumber": 3060,
+            "dbName": "mysql",
+            "userName": "apps",
+            "password": "password",
+            "connPoll": 5,
+            "maxConnPoll": 10,
+            "defaultRowLimit" : 5
+        }
+
+    },
+    "settings": {
+        "debugLevel": 5,
+        "accessSecret": "12345",
+        "disableAuthorization": true,
+        "ebsServerTimeDifferenceMin": 60,
+        "ebsServerTimeDifferenceDay": 0,
+        "rikdataDisableClientSecurity": false,
+        "showAllColumns": true
+    }
+}
+
+
