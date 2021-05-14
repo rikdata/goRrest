@@ -10,7 +10,7 @@ The user interface is also available in Windows & macOS to configure various bus
 
 
 ## How to use
-Download the application (including SQLite database @ https://github.com/rikdata/goRrest/tree/main/windows/assets/db). 
+Download the application (including SQLite database @ https://github.com/rikdata/goRrest/tree/main/windows/assets/db ). 
 
 Unzip all the files.
 Change your EBS Database details in the config.json file.
