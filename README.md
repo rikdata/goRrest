@@ -10,15 +10,16 @@ The user interface is also available in Windows & macOS to configure various bus
 
 
 ## How to use
-Download the application. 
+Download the application (including SQLite database @ https://github.com/rikdata/goRrest/tree/main/windows/assets/db). 
+
 Unzip all the files.
-Change your EBS Database details in config.json file
+Change your EBS Database details in the config.json file.
 
 Start the server. 
 
 Update the EBS_PROD instance of your client application (Desktop/Mobile).
 
-Log in to the application using default username and password: admin/admin.
+Log in to the application using the default username and password: admin/admin.
 
 Read the documentation @ http://docs.rikdata.com and JavaDocs @ https://docs.rikdata.com/docs/javadocs/
 
