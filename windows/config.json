@@ -1,41 +1,104 @@
 {
-    "application": {
-        "protocol": "http://",
-        "hostName": "localhost",
-        "portNumber": 8080       
-    },
-    "database": {
-        "Oracle" : {
-            "host": "localhost",
-            "portNumber": 3060,
-            "dbName": "ebs",
-            "userName": "apps",
-            "password": "password",
-            "connPoll": 5,
-            "maxConnPoll": 10,
-            "defaultRowLimit" : 5
-        },
-        "MsSql" : {
-            "host": "localhost",
-            "portNumber": 3060,
-            "dbName": "mysql",
-            "userName": "apps",
-            "password": "password",
-            "connPoll": 5,
-            "maxConnPoll": 10,
-            "defaultRowLimit" : 5
-        }
+  "application": {
+    "protocol": "http://",
+    "hostName": "localhost",
+    "portNumber": 8085
+  },
 
+  "settings": {
+    "debugLevel": 0,
+    "accessSecret": "12345",
+    "autoCreateUsers": true,
+    "disableAuthorization": true,
+    "enableJsValidation": true,
+    "showSqlStatements": true,
+    "ebsServerTimeDifferenceMin": 60,
+    "ebsServerTimeDifferenceDay": 0,
+    "rikdataDisableClientSecurity": false,
+    "showAllColumns": true,
+    "maximumJsVmCount": 50
+  },
+  "database": [
+    {
+      "dbConnName": "OracleEBS",
+      "dbType": "Oracle",
+      "host": "localhost",
+      "portNumber": 2600,
+      "dbName": "r12",
+      "userName": "userName",
+      "password": "password",
+      "connPoll": 3,
+      "maxConnPoll": 1000,
+      "defaultRowLimit": 5
     },
-    "settings": {
-        "debugLevel": 5,
-        "accessSecret": "12345",
-        "disableAuthorization": false,
-        "ebsServerTimeDifferenceMin": 60,
-        "ebsServerTimeDifferenceDay": 0,
-        "rikdataDisableClientSecurity": false,
-        "showAllColumns": true
+    {
+      "dbConnName": "lMes",
+      "dbType": "MySQL",
+      "host": "localhost",
+      "portNumber": 3306,
+      "dbName": "lMes",
+      "userName": "lMes",
+      "password": "lMes",
+      "connPoll": 5,
+      "maxConnPoll": 10,
+      "defaultRowLimit": 5
+    },
+    {
+      "dbConnName": "Oracle1",
+      "dbType": "Oracle1",
+      "host": "localhost",
+      "portNumber": 3400,
+      "dbName": "r12",
+      "userName": "userName",
+      "password": "password",
+      "connPoll": 3,
+      "maxConnPoll": 1000,
+      "defaultRowLimit": 5
+    },
+    
+    {
+      "dbConnName": "TimeSheet",
+      "dbType": "MsSql",
+      "host": "localhost",
+      "portNumber": 1433,
+      "dbName": "timesheet",
+      "userName": "timesheet",
+      "password": "welcome1",
+      "connPoll": 5,
+      "maxConnPoll": 10,
+      "defaultRowLimit": 5
+    },
+    {
+      "dbConnName": "PostgreSQL",
+      "dbType": "PostgreSQL",
+      "host": "localhost",
+      "portNumber": 5432,
+      "dbName": "peppol",
+      "userName": "postgres",
+      "password": "welcome1",
+      "connPoll": 5,
+      "maxConnPoll": 10,
+      "defaultRowLimit": 5
+    },
+    {
+      "dbConnName": "Sqlite",
+      "dbType": "Sqlite",
+      "host": "localhost",
+      "portNumber": 3060,
+      "dbName": "mysql",
+      "userName": "apps",
+      "password": "password",
+      "connPoll": 5,
+      "maxConnPoll": 10,
+      "defaultRowLimit": 5
     }
+  ],
+  "oauth": {
+    "userName": ["unique_name", "user_name"],
+    "email": ["upn"],
+    "lastName": ["family_name", "last_name"],
+    "firstName": ["given_name", "first_name"],
+    "phoneNumber": ["mobile", "phone_number"],
+    "roles": ["scp"]
+  }
 }
-
-
